@@ -18,7 +18,7 @@ public class pessoa {
 
         System.out.println("Nome: " + nome);
         System.out.println("Cor:" + cor);
-        System.out.println("Idade: " + idade);
+        System.out.println("Idade: "+ idade);
        
        
     }
