@@ -1,25 +1,34 @@
-package aula_06;
+import java.util.Scanner;
 
-public class eu {
-    public static void main (String [] args){
-        int soma;
-        int diferenca;
-        int mutiplicacao;
-        double divisao;
-        int nun1;
-        int nun2;
-        nun1 = 10;
-        nun2 = 5;
-        soma = nun1 + nun2;
-        diferenca = nun1 - nun2;
-        mutiplicacao = nun1 * nun2;
-        divisao = nun1 / nun2;
+public class switchExemplo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Soma:"+ soma);
-        System.out.println("Diferença:"+ diferenca);
-        System.out.println("Mutiplicação:"+ mutiplicacao);
-        System.out.println("Divisão:"+ divisao);
+        // Exibe as opções para o usuário
+        System.out.println("Escolha uma opção:");
+        System.out.println("1 - Olá");
+        System.out.println("2 - Tchau");
+        System.out.println("3 - Como vai?");
+        System.out.print("Digite o número da opção: ");
+        
+        int opcao = scanner.nextInt();
 
+        // Estrutura switch para executar ações diferentes
+        switch(opcao) {
+            case 1:
+                System.out.println("Olá!");
+                break;
+            case 2:
+                System.out.println("Tchau!");
+                break;
+            case 3:
+                System.out.println("Estou bem, e você?");
+                break;
+            default:
+                System.out.println("Opção inválida!");
+                break;
+        }
+
+        scanner.close();
     }
-    
 }
